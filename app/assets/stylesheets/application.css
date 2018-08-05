@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require material
+ */
+
+body {
+    background-color: #1b3039;
+    color: rgba(255,255,255,0.87);
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center_button {
+    width: 60%;
+    height: 8vh;
+    font-size : 4vmin;
+    white-space: normal;
+}
+
+#main {
+    display: block;
+    max-width: 1920vw;
+    max-height: 1080px;
+    height: 70vh;
+}
+
+#dog_image {
+    display: block;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+.loading {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+
+#loading-indicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.header {
+    font-size: 6vmin;
+    height: 6vh;
+    padding-top: 2%;
+}
+
+.footer {
+    height: 8vh;
+    padding-bottom: 8px;
+}
+
+.fa:before {
+    font-size: 3vmin;
+}
+
+.affiliate {
+    height: 8vh;
+}
+
+#error {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    height: 8vh;
+    font-size: 2vmin;
+    white-space: normal;
+    padding-top: 2%;
+    color: red;
+}
+
+input[type=file] {
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.material-icons.peach { color: #FFD180; }

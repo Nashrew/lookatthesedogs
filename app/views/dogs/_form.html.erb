@@ -1,0 +1,10 @@
+<%= form_for post do |f| %>
+  <div>
+    <%= f.file_field :image, :class => "center_button" %>
+  </div>
+ 
+  <div>
+    <%= f.submit "Add that dog", :class => "center_button" %>
+  </div>
+  <%= link_to "Click on here for to looking at more dogs ^_^", root_path %>
+<% end %>

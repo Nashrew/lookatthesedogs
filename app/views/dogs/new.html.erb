@@ -1,0 +1,4 @@
+<% if flash[:error] %>
+    <p id="error" class="center"><%= flash[:error] %></p>
+<% end %>
+<%= render 'form', post: @dog %>

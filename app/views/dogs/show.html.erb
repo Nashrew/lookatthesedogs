@@ -1,0 +1,20 @@
+<% content_for :head do %>
+    <meta property="og:url"                content="<%= "http://www.lookatthesedogs.com/dogs/" + @dog.id.to_s %>"/>
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Look at this doggo" />
+    <meta property="og:description"        content="You can look at this doggo then you can look at other doggo" />
+    <meta property="og:image"              content=<%= @dog.image.url %> />
+<% end %>
+
+<div class="header">Click on dog to see more dog :)</div>
+<a href="#" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook fa-2x"></i></a>
+<a href="#" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter fa-2x"></i></a>
+<div id="main" class="index">
+    <%= image_tag(@dog.image.url, id: "dog_img", alt: 'Image', :class => 'dog_image center ajax_dog_image', :style => "display:none", :data => { :id => @dog.id }) if @dog.image? %>
+</div>
+<div class="footer">
+    <%= button_to 'Click on here for add more dog :D', new_dog_path, :method => :get, :class => 'center center_button' %>
+</div>
+<div class="affiliate">
+    <a target="_blank" href="https://shareasale.com/r.cfm?b=1127816&amp;u=1736452&amp;m=62450&amp;urllink=&amp;afftrack="><img src="http://static.shareasale.com/image/62450/728x903.jpg" border="0" alt="your choice. your pupjoy." /></a>
+</div>
